@@ -1,0 +1,87 @@
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.meg-container {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* New messages appear at the bottom */
+}
+
+.container {
+    border: 1px solid #dedede;
+    background-color: #e7f3fe;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container h3 {
+    margin: 0;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container p {
+    margin:0;
+    font-size: 14px;
+    word-wrap: break-word; /* Ensures long words break to the next line */
+    white-space: pre-wrap;
+}
+
+.send-mesg {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.send-mesg label {
+    font-weight: bold;
+    color: #555;
+}
+
+.send-mesg input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#message {
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 0;
+}
+
+.send-mesg input[type="button"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-mesg input[type="button"]:hover {
+    background-color: #0056b3;
+}

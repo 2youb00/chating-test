@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Example</title>
+<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+
+<h2>Chat Messages</h2>
+<div class="meg-container"></div>
+
+<div class="send-mesg">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" autocomplete="off">
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message">
+    <input type="button" id="send" name="send" value="Send">
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
